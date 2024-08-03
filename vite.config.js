@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/realtime-chat-app-frontend/",
+  build: {
+    chunkSizeWarningLimit: 1000  // Adjust the limit as needed
+  }
 })
